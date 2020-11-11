@@ -1,4 +1,4 @@
-import './module'
+
 import './scss/index.scss'
 const heading = document.createElement('h1')
 heading.textContent = 'Как интересно!!!!!'
