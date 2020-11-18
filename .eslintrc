@@ -12,7 +12,24 @@
     "eol-last": [
       "error",
       "never"
-    ]
+    ],
+    "object-curly-spacing": [
+      "error",
+      "always",
+      {
+        "arraysInObjects": false
+      }
+    ],
+    "comma-dangle": "off",
+    "no-trailing-spaces": [
+      "error",
+      {
+        "ignoreComments": true,
+        "skipBlankLines": true
+      }
+    ],
+    "arrow-parens": "off",
+    "operator-linebreak": "off"
   },
   "extends": [
     "eslint:recommended",

@@ -13,15 +13,22 @@ const isDev = !isProd
 const filename = ext => isDev ? `bundle.${ext}` : `bundle.[fullhash].${ext}`
 
 module.exports = {
-  context: path.resolve(__dirname, 'src'),
+  context: path.resolve(__dirname, './src'),
   mode: 'development',
   entry: {
-    main: path.resolve(__dirname, 'src/index.js'),
+    main: path.resolve(__dirname, './src/index.js'),
   },
   output: {
     filename: filename('js'),
     path: path.resolve(__dirname, 'dist')
   },
+  // resolve: {
+  //   extensions: ['.js'],
+  //   alias: {
+  //     '@': path.resolve(__dirname, 'src'),
+  //     '@core': path.resolve(__dirname, 'src/core')
+  //   }
+  // },
   devServer: {
     historyApiFallback: true,
     contentBase: path.resolve(__dirname, 'dist'),
@@ -63,7 +70,7 @@ module.exports = {
           loader: 'babel-loader',
           options: {
             presets: ['@babel/preset-env'],
-            plugins: ['@babel/plugin-transform-runtime']
+            plugins: ['@babel/plugin-transform-runtime', '@babel/plugin-proposal-class-properties']
           }
         },
       },
