@@ -22,13 +22,13 @@ module.exports = {
     filename: filename('js'),
     path: path.resolve(__dirname, 'dist')
   },
-  // resolve: {
-  //   extensions: ['.js'],
-  //   alias: {
-  //     '@': path.resolve(__dirname, 'src'),
-  //     '@core': path.resolve(__dirname, 'src/core')
-  //   }
-  // },
+  resolve: {
+    extensions: ['.js'],
+    // alias: {
+    //   '@': path.resolve(__dirname, 'src'),
+    //   '@core': path.resolve(__dirname, 'src/core')
+    // }
+  },
   devServer: {
     historyApiFallback: true,
     contentBase: path.resolve(__dirname, 'dist'),

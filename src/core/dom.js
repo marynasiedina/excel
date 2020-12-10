@@ -8,7 +8,7 @@ class Dom {
   html(html) {
     if (typeof html === 'string') {
       this.$el.innerHTML = html
-      return this //для выполнения чейна
+      return this // для выполнения чейна
     }
     return this.$el.outerHTML.trim()
   }
