@@ -4,7 +4,7 @@ const CODES = {
 }
 
 function toCell( _, col ) {
-  return `<div class="cell" data-col="${col}" contenteditable></div>`
+  return `<div class="cell" data-col="${col}" ></div>`
 }
 
 function toColumn( col, index ) {
@@ -22,7 +22,7 @@ function createRow(index, content) {
     : ''
 
   return `
-    <div class="row">
+    <div class="row" data-type="resizable">
       <div class="row-info">${index ? index : ''}
         ${resizer}
       </div>
