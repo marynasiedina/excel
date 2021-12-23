@@ -13,4 +13,4 @@ export class Header extends ExcelComponent {
       </div>
     </div>`
   }
-}   
+}
