@@ -9,10 +9,7 @@
     "semi": "off",
     "require-jsdoc": "off",
     "linebreak-style": 0,
-    "eol-last": [
-      "error",
-      "never"
-    ],
+    "eol-last": "off",
     "object-curly-spacing": [
       "error",
       "always",
@@ -29,7 +26,7 @@
       }
     ],
     "arrow-parens": "off",
-    "operator-linebreak": "off"
+    "operator-linebreak": "off",
   },
   "extends": [
     "eslint:recommended",
