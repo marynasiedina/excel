@@ -8,10 +8,10 @@ export class DomListener {
     this.$root = $root
     this.listeners = listeners
   }
+
   initDOMListeners() {
     this.listeners.forEach(listener => {
       const method = getMethodName(listener)
-      console.log(this, method)
       if (!this[method]) {
         const name = this.name || ''
         throw new Error(`
