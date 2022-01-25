@@ -26,7 +26,7 @@
       }
     ],
     "arrow-parens": "off",
-    "operator-linebreak": "off",
+    "operator-linebreak": "off"
   },
   "extends": [
     "eslint:recommended",
